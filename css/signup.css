@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+/* main section */
+.main-section {
+  min-height: 1205px;
+  background: url(../assets-signup/banner-login.png) center/cover no-repeat;
+}
+.main-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.main-div {
+  max-width: 472px;
+  width: 100%;
+  min-height: 832px;
+  padding-top: 33px;
+  text-align: center;
+}
+.main-logo {
+  max-width: 197px;
+  max-height: 92px;
+  margin: 0 auto;
+}
+.main-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main-para {
+  color: #11385d;
+  font-size: 14px;
+  font-weight: bold;
+}
+.blur-div {
+  max-width: 472px;
+  min-height: 916px;
+  backdrop-filter: blur(50px);
+  box-shadow: inset 0 10px 19px rgba(0, 0, 0, 0.2);
+  padding: 48px 66px;
+}
+.blur-div > h2 {
+  color: #11385d;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+.header {
+  text-align: center;
+  color: #9c8e75;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.toggle-container {
+  max-width: 325px;
+  min-height: 56px;
+  display: flex;
+  background-color: #b2b0b0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.toggle-option {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-option.active {
+  max-width: 137px;
+  height: 33px;
+  background-color: #f2fbff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 11px;
+}
+.name-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-wrap: wrap;
+}
+.name-field > input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+  /* font-size: 14px; */
+}
+.email-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-wrap: wrap;
+}
+.email-field > input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+  /* font-size: 14px; */
+}
+.address-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-wrap: wrap;
+}
+.address-field > input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+  /* font-size: 14px; */
+}
+.gender-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-wrap: wrap;
+  padding: 0 41px;
+  gap: 44px;
+}
+.gender-field > select {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+  color: #7f7f7f;
+  /* font-size: 14px; */
+}
+.category-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-wrap: wrap;
+  padding: 0 41px;
+  gap: 44px;
+}
+.category-field > select {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+  color: #7f7f7f;
+  /* font-size: 14px; */
+}
+.password-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-wrap: wrap;
+  /* overflow: hidden; */
+}
+.password-field > input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+}
+.confirm-password-field {
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  background-color: white;
+  border: 1px solid #7f7f7f;
+  border-radius: 10px;
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-wrap: wrap;
+  /* overflow: hidden; */
+}
+.confirm-password-field > input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: medium;
+  background: transparent;
+  padding: 19px 0;
+}
+.check-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 23px;
+}
+.check-field > input {
+  height: 24px;
+  width: 25px;
+  border: 1px solid #7f7f7f;
+}
+.check-field > label {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+.btn {
+  background-color: #182536;
+  color: white;
+  max-width: 325px;
+  width: 100%;
+  min-height: 56px;
+  border-radius: 10px;
+}
+.btn-sign-in {
+  color: black;
+  font-size: 15px;
+  padding-top: 68px;
+}
+.btn-sign-in-anch {
+  text-decoration: none;
+  color: #108dc5;
+}
+
+@media screen and (max-width: 768px) {
+  .main-logo {
+    max-width: 142px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .name-field {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    gap: 4px;
+  }
+  .name-field > input {
+    font-size: 11px;
+  }
+  .email-field {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    gap: 4px;
+  }
+  .email-field > input {
+    font-size: 11px;
+  }
+  .address-field {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    gap: 4px;
+  }
+  .address-field > input {
+    font-size: 11px;
+  }
+
+  .gender-field {
+    flex-wrap: wrap;
+    padding-top: 10px;
+    gap: 4px;
+  }
+
+  .gender-field > select {
+    font-size: 12px;
+  }
+  .category-field {
+    flex-wrap: wrap;
+    padding: 12px 22px;
+    gap: 4px;
+  }
+
+  .category-field > select {
+    font-size: 12px;
+  }
+
+  .password-field {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    gap: 4px;
+  }
+  .password-field > input {
+    font-size: 10px;
+  }
+
+  .confirm-password-field {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    gap: 4px;
+  }
+  .confirm-password-field > input {
+    font-size: 10px;
+  }
+  .blur-div{
+    padding: 48px 26px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .toggle-container {
+    flex-wrap: wrap;
+  }
+
+  .forgot-field {
+    text-align: center;
+  }
+  .gender-field {
+    justify-content: center;
+  }
+  .gender-field > select {
+    margin-right: 31px;
+  }
+  .category-field {
+    justify-content: center;
+  }
+  .category-field > select {
+    margin-right: 31px;
+  }
+  .name-field > input{
+    padding: 8px 0;
+  }
+  .email-field > input{
+    padding: 8px 0;
+  }
+  .address-field > input{
+    padding: 8px 0;
+  }
+  .gender-field > select{
+    padding: 8px 0;
+  }
+  .password-field > input{
+    padding: 8px 0;
+  }
+  .confirm-password-field > input{
+    padding: 8px 0;
+  }
+  .category-field > select{
+    padding: 8px 0;
+  }
+  
+}
